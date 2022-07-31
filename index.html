@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
+  <title>Rep Countdown</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="speech.js"></script>
+</head>
+
+<body>
+  <!-- <script src="script.js"></script> -->
+  <main class="container">
+    <header>Rep Counter</header>
+    <div class="number-container">
+      <div class="number-item small-grey number-controls">
+        <span onclick="addNumberSet(-1)">-1</span>
+        <span onclick="addNumberSet(-5)">-5</span>
+        <span onclick="addNumberSet(-10)">-10</span>
+      </div>
+      <div class="number-item set-item">
+        <span class="number-title">sets</span>
+        <span id="set-number">0</span>
+      </div>
+      <div class="number-item small-grey number-controls">
+        <span onclick="addNumberSet(1)">+1</span>
+        <span onclick="addNumberSet(5)">+5</span>
+        <span onclick="addNumberSet(10)">+10</span>
+      </div>
+    </div>
+    <div class="number-container">
+      <div class="number-item small-grey number-controls">
+        <span onclick="addNumberRep(-1)">-1</span>
+        <span onclick="addNumberRep(-5)">-5</span>
+        <span onclick="addNumberRep(-10)">-10</span>
+      </div>
+      <div class="number-item set-item">
+        <span class="number-title">reps</span>
+        <span id="rep-number">0</span>
+      </div>
+      <div class="number-item small-grey number-controls">
+        <span onclick="addNumberRep(1)">+1</span>
+        <span onclick="addNumberRep(5)">+5</span>
+        <span onclick="addNumberRep(10)">+10</span>
+      </div>
+    </div>
+    <button type="button" id="begin" onclick="toggleRecording()">Begin!</button>
+  </main>
+</body>
+
+</html>
